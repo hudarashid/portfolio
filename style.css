@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(163deg, rgba(244, 175, 171, 1), rgba(0, 0, 0, 0));
+  font-family: "Oxygen Mono", monospace;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  color: #939393;
+  font-weight: lighter;
+  font-style: italic;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+img {
+  width: 25%;
+}
+
+.logo a {
+  display: inline-block;
+  height: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+svg path {
+  transition: fill 150ms ease-in-out;
+}
+
+.github:hover svg path {
+  fill: #000000;
+}
+
+.linkedin:hover svg path {
+  fill: #0a66c2;
+}
+
+.twitter:hover svg path {
+  fill: #1da1f2;
+}
+
+.frontendmentor svg rect {
+  fill: #676767;
+}
+
+.frontendmentor:hover svg rect {
+  fill: #fff;
+}
+
+.frontendmentor:hover svg .smile {
+  fill: #3f54a3;
+}
+
+.frontendmentor:hover svg .line {
+  fill: #67bece;
+}
+
+.container {
+  margin: 3em 18em;
+  padding: 1em 4em;
+  border: solid 1px rgb(53, 6, 22);
+  border-radius: 1.5rem;
+  background-color: #f7edf0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.875rem;
+}
+
+.project-item {
+  border-radius: 0.3125rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+  transition: all 150ms ease-in-out;
+}
+
+.project-item:hover {
+  transform: scale(1.03);
+}
+
+.project-image {
+  height: 12.5rem;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.project-title {
+  font-size: 0.75rem;
+  line-height: 1.2;
+  color: #03111f;
+  margin-bottom: 0.5rem;
+}
+
+/* phone 767px and below */
+@media screen and (max-width: 47.9375em) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  img {
+    width: 40%;
+  }
+
+  .container {
+    margin: 1em 3.25em;
+    padding: 1em 2em;
+  }
+
+  .projects {
+    display: block;
+  }
+}
+/* ipad between 768px 1024px */
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  img {
+    width: 50%;
+  }
+  .container {
+    margin: 2em 8em;
+    padding: 1em 3em;
+  }
+}
