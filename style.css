@@ -50,6 +50,10 @@ img {
   margin-bottom: 1rem;
 }
 
+.profile-photo {
+  border-radius: 50%;
+}
+
 a {
   text-decoration: none;
 }
@@ -146,6 +150,7 @@ svg path {
 
   img {
     width: 40%;
+    border-radius: 50%;
   }
 
   .container {
