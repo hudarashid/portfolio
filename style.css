@@ -66,6 +66,17 @@ svg path {
 	transition: fill 150ms ease-in-out;
 }
 
+mark {
+	font-size: 80%;
+	background-color: rgb(197, 197, 197);
+	color: rgb(82, 82, 82);
+}
+
+.date {
+	font-size: 80%;
+	color: rgb(82, 82, 82);
+}
+
 .github:hover svg path {
 	fill: #000000;
 }
