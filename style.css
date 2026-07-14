@@ -14,22 +14,29 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	background: linear-gradient(163deg, rgba(244, 175, 171, 1), rgba(0, 0, 0, 0));
+	background-color: #0a0a0a;
 	font-family: 'Oxygen Mono', monospace;
 	text-align: center;
+	color: #d4d4d4;
 }
 
 h1 {
 	margin: 0;
 	font-size: 1.5rem;
+	color: #f0f0f0;
+	letter-spacing: 0.1em;
 }
 
 h3 {
 	margin: 0;
+	color: #f0f0f0;
+	font-size: 0.85rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
 }
 
 h4 {
-	color: #939393;
+	color: #555555;
 	font-weight: lighter;
 	font-style: italic;
 	padding-bottom: 1rem;
@@ -38,6 +45,9 @@ h4 {
 
 p {
 	text-align: justify;
+	color: #9a9a9a;
+	font-size: 0.875rem;
+	line-height: 1.7;
 }
 
 img {
@@ -52,65 +62,85 @@ img {
 
 .profile-photo {
 	border-radius: 50%;
+	filter: grayscale(20%);
 }
 
 a {
 	text-decoration: none;
+	color: #c0c0c0;
 }
 
 a:not(:last-child) {
 	margin-right: 0.5rem;
 }
 
+a:hover {
+	color: #ffffff;
+}
+
 svg path {
 	transition: fill 150ms ease-in-out;
 }
 
+svg path {
+	fill: #4a4a4a;
+}
+
 mark {
-	font-size: 80%;
-	background-color: rgb(197, 197, 197);
-	color: rgb(82, 82, 82);
+	font-size: 78%;
+	background-color: #1e1e1e;
+	color: #666666;
+	border: 1px solid #2a2a2a;
+	padding: 1px 5px;
+	border-radius: 3px;
 }
 
 .date {
-	font-size: 80%;
-	color: rgb(82, 82, 82);
+	font-size: 78%;
+	color: #444444;
+	margin-bottom: 0.25rem;
 }
 
 .github:hover svg path {
-	fill: #000000;
+	fill: #f0f0f0;
 }
 
 .linkedin:hover svg path {
-	fill: #0a66c2;
+	fill: #c0c0c0;
 }
 
 .twitter:hover svg path {
-	fill: #000000;
+	fill: #f0f0f0;
 }
 
 .frontendmentor svg rect {
-	fill: #676767;
+	fill: #2e2e2e;
 }
 
 .frontendmentor:hover svg rect {
-	fill: #fff;
+	fill: #3c3c3c;
 }
 
 .frontendmentor:hover svg .smile {
-	fill: #3f54a3;
+	fill: #888888;
 }
 
 .frontendmentor:hover svg .line {
-	fill: #67bece;
+	fill: #aaaaaa;
 }
 
 .container {
 	margin: 3em 18em;
-	padding: 1em 4em;
-	border: solid 1px rgb(53, 6, 22);
-	border-radius: 1.5rem;
-	background-color: #f7edf0;
+	padding: 1.5em 4em;
+	border: 1px solid #1e1e1e;
+	border-radius: 0.75rem;
+	background-color: #111111;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #1e1e1e;
+	margin: 1rem 0;
 }
 
 .projects {
@@ -122,8 +152,8 @@ mark {
 .project-item {
 	border-radius: 0.3125rem;
 	overflow: hidden;
-	background-color: white;
-	box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+	background-color: #161616;
+	box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
 	transition: all 150ms ease-in-out;
 }
 
@@ -141,8 +171,14 @@ mark {
 .project-title {
 	font-size: 0.75rem;
 	line-height: 1.2;
-	color: #03111f;
+	color: #9a9a9a;
 	margin-bottom: 0.5rem;
+}
+
+footer {
+	font-size: 0.75rem;
+	color: #333333;
+	padding: 2rem 0;
 }
 
 /* phone 767px and below */
@@ -165,14 +201,15 @@ mark {
 	}
 
 	.container {
-		margin: 1em 3.25em;
-		padding: 1em 2em;
+		margin: 1em 1.5em;
+		padding: 1em 1.5em;
 	}
 
 	.projects {
 		display: block;
 	}
 }
+
 /* ipad between 768px 1024px */
 @media screen and (min-width: 48em) and (max-width: 64em) {
 	img {
